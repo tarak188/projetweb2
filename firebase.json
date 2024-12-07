@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "projetweb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

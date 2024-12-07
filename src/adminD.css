@@ -1,0 +1,85 @@
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .stat-card {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stat-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .stat-card p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .purchases-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+   }
+  
+  .purchases-container h3 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .purchases-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .purchases-list li {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .purchases-list li span {
+    font-weight: bold;
+    color: #333;
+  }
+  .chart-container {
+    width: 60%;  /* Set to a percentage or pixel value to control size */
+    max-width: 800px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the chart */
+    padding: 20px;
+  }
+  
+  .chart-container canvas {
+    max-width: 100% !important; /* Ensure the canvas doesn't overflow */
+    height: auto !important; /* Adjust the height automatically to maintain the aspect ratio */
+  }
+  
+  

@@ -1,0 +1,325 @@
+.creditpage{
+background-color: darkblue;
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(151deg, rgba(21, 24, 28, 1) 0%, rgba(6, 37, 62, 1) 100%);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageWrap {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    column-gap: 80px;
+    row-gap: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding: 30px 0;
+    color: white;
+    perspective: 1500px;
+}
+
+.title {
+    flex: 0 0 100%;
+    text-align: center;
+    max-height: 6em;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.card {
+    position: relative;
+    width: 40vw;
+    height: 25vw;
+    max-width: 400px;
+    max-height: 250px;
+    font-size: min(2vw, 20.5px);
+    color: white;
+    transition: all 0.2s ease;
+    transform-style: preserve-3d;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    padding: 0;
+    margin: 0;
+}
+
+.cardfront {
+    position: absolute;
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    background: #10E5BC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.Debit {
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 0em;
+    top: 2em;
+    font-size: 0.7em;
+}
+
+#sort-code-display {
+    position: absolute;
+    top: 6em;
+}
+
+.expiry-date-display-wrap {
+    position: absolute;
+    bottom: 4em;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#ccv-display {
+    width: 5em;
+    background: #CECECE;
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    font-style: italic;
+    font-size: 0.7em;
+    padding: 0.4em;
+    text-align: right;
+    color: gray;
+}
+
+#expiry-date-display {
+    font-size: 1.5em;
+}
+
+.strip {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    height: 2.2em;
+    background-color: #4F4F4F;
+}
+
+.fa-wifi {
+    position: absolute;
+}
+
+.cardback {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    background: #10E5BC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.visa {
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+.chip {
+    position: absolute;
+    left: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+svg {
+    width: 2.5em;
+    margin: 0;
+}
+
+.card-section {
+    width: fit-content;
+    margin: 0.5em 0;
+}
+
+#account-number-display {
+    font-size: 1.3em;
+    margin: 1.2em auto;
+}
+
+#name-display {
+    position: absolute;
+    left: 2em;
+    bottom: 1em;
+}
+
+.focus-border {
+    position: absolute;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+    padding: 0.4em;
+    transform: translateX(-0.4em) translateY(-0.4em);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inputs label {
+    margin: 0px 0;
+    font-size: 12px;
+}
+
+.inputs input {
+    background: none;
+    margin-bottom: 40px;
+    padding: 5px 10px 10px 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.date input {
+    width: 30px;
+    text-align: center;
+}
+
+.CCV input {
+    width: 60px;
+    text-align: center;
+}
+
+.dateCCV {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ccv,
+#expiry-year,
+#expiry-month {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e5799;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #7db9e8;
+}
+
+.card.submitted {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.card.submitted.flip {
+    transform: scale(1.2) rotateY(180deg);
+    transition: all 0.5s ease;
+}
+
+.inputs.submitted {
+    transform: scale(0);
+    display: none;
+    transition: all 2s ease;
+}
+
+.cancel-btn {
+    position: absolute;
+    left: -1.5em;
+    top: -1.5em;
+    font-size: 1.5em;
+    display: none;
+    text-align: center;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.flip-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 3em;
+    text-align: center;
+    border: none;
+    background: none;
+    color: white;
+    opacity: 0;
+    z-index: 5;
+    transition: all 0.2s ease;
+}
+
+.flip-btn:hover {
+    opacity: 0.3;
+    transition: all 0.2s ease;
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+    .pageWrap {
+        flex-direction: column;
+    }
+}
+
+.blur {
+    filter: blur(6px) brightness(0.7);
+    transition: all 0.2s;
+}
+}
